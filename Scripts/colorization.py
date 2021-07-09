@@ -24,7 +24,7 @@ Y = lab_image_norm[:,:,1:]
 
 # The Conv2D layer we will use later expects the inputs and training outputs to be of the following format:
 # (samples, rows, cols, channels), so we need to do some reshaping
-# https://keras.io/layers/convolutional/
+
 X = X.reshape(1, X.shape[0], X.shape[1], 1)
 Y = Y.reshape(1, Y.shape[0], Y.shape[1], 2)
 
